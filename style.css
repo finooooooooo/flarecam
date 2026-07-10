@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-green: #00b14f;
+    --hover-green: #009944;
+    --bg-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-success { color: var(--primary-green) !important; }
+.bg-success { background-color: var(--primary-green) !important; }
+.btn-success { background-color: var(--primary-green); border-color: var(--primary-green); }
+.btn-success:hover { background-color: var(--hover-green); border-color: var(--hover-green); }
+.btn-outline-success { color: var(--primary-green); border-color: var(--primary-green); }
+.btn-outline-success:hover { background-color: var(--primary-green); color: white; }
+.transition-hover { transition: color 0.2s ease; }
+.transition-hover:hover { color: var(--primary-green) !important; }
+
+/* Detail Page Custom Styles */
+.detail-img-container { background: #f8f9fa; border-radius: 20px; padding: 20px; text-align: center; }
+.detail-img { max-height: 400px; object-fit: contain; mix-blend-mode: multiply; }
+.spec-box { border: 1px solid #eee; border-radius: 12px; padding: 15px; background: white; }
+.spec-box i { font-size: 24px; color: var(--primary-green); margin-bottom: 10px; display: block; }
+
+.hero-section { background: linear-gradient(120deg, #f0fdf4 0%, #ffffff 100%); border-radius: 24px; padding: 60px 40px; position: relative; overflow: hidden; }
+.hero-img-container { position: relative; height: 400px; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+.floating-badge { position: absolute; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 10px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; }
+
+.category-item { display: flex; flex-direction: column; align-items: center; gap: 12px; cursor: pointer; transition: transform 0.2s; min-width: 100px; }
+.category-item:hover { transform: translateY(-5px); }
+.category-icon-box { width: 70px; height: 70px; border-radius: 20px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; font-size: 24px; border: 1px solid #eee; transition: all 0.3s; }
+.category-item:hover .category-icon-box { background: white; border-color: var(--primary-green); color: var(--primary-green); box-shadow: 0 10px 20px rgba(0,177,79,0.1); }
+
+.product-card { border: 1px solid #eee; border-radius: 16px; overflow: hidden; transition: all 0.3s ease; background: white; height: 100%; cursor: pointer; }
+.product-card:hover { box-shadow: 0 15px 30px rgba(0,0,0,0.06); transform: translateY(-4px); border-color: transparent; }
+.product-img-wrapper { position: relative; height: 200px; background: #f8f9fa; }
+.product-img { width: 100%; height: 100%; object-fit: cover; }
+.status-badge { position: absolute; top: 12px; left: 12px; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+.status-available { background: var(--primary-green); color: white; }
+.status-empty { background: #dc3545; color: white; }
+
+.promo-banner { background: var(--primary-green); border-radius: 24px; color: white; padding: 50px; }
+.join-banner { background: #e8f7f0; border-radius: 24px; padding: 60px; text-align: center; }
+.filter-sidebar { position: sticky; top: 100px; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.table-custom { border-radius: 12px; overflow: hidden; border: 1px solid #eee; }
+
+/* Custom Tabs untuk Detail Page */
+.custom-tabs {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+.custom-tabs .nav-item {
+    margin-bottom: -2px;
+}
+.custom-tabs .nav-link {
+    color: #666;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.custom-tabs .nav-link:hover {
+    color: var(--primary-green);
+    border-color: transparent;
+}
+.custom-tabs .nav-link.active {
+    color: #000;
+    background: transparent;
+    border-bottom: 2px solid #d9a05b; /* Warna garis emas/orange seperti referensi */
+}
+
+/* Tabel Spesifikasi */
+.table-specs th {
+    width: 30%;
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.table-specs td {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* Included Items Grid */
+.included-card {
+    border: none;
+    text-align: center;
+}
+.included-card img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+}
+.included-card h6 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}

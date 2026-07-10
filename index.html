@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlareCam - Sewa Kamera Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success fs-4" href="javascript:void(0)" onclick="app.navigate('home')">FlareCam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link px-3" href="javascript:void(0)" onclick="app.navigate('home')">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="javascript:void(0)" onclick="app.navigate('products')">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="javascript:void(0)" onclick="app.scrollToSection('paket-section')">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="javascript:void(0)" onclick="app.scrollToSection('inspirasi-section')">Inspirasi</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2" id="nav-actions"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content App -->
+    <main id="app-container"></main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-success mb-3">FlareCam</h5>
+                    <p class="text-muted small pe-4">Platform penyewaan peralatan fotografi dan videografi profesional terpercaya di Indonesia.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Produk</h6>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="javascript:void(0)" onclick="app.filterProducts('kamera')" class="text-decoration-none text-muted transition-hover">Kamera</a></li>
+                        <li><a href="javascript:void(0)" onclick="app.filterProducts('lensa')" class="text-decoration-none text-muted transition-hover">Lensa</a></li>
+                        <li><a href="javascript:void(0)" onclick="app.filterProducts('drone')" class="text-decoration-none text-muted transition-hover">Drone</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Kontak</h6>
+                    <ul class="list-unstyled text-muted small lh-lg">
+                        <li><a href="https://wa.me/6285137955855" target="_blank" class="text-decoration-none text-muted transition-hover"><i class="bi bi-whatsapp me-2 text-success"></i>Kontak Flare Cam</a></li>
+                        <li><a href="https://www.instagram.com/alennn_88" target="_blank" class="text-decoration-none text-muted transition-hover"><i class="bi bi-instagram me-2" style="color: #E1306C;"></i>Instagram kami</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Universitas+Kristen+Satya+Wacana+Salatiga" target="_blank" class="text-decoration-none text-muted transition-hover"><i class="bi bi-geo-alt me-2 text-primary"></i>Salatiga, UKSW</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top pt-4 mt-4 text-muted small">
+                © 2026 FlareCam. Seluruh hak cipta dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1060;">
+        <div id="liveToast" class="toast align-items-center text-bg-success border-0 shadow" role="alert">
+            <div class="d-flex">
+                <div class="toast-body fw-medium" id="toastMessage">Notifikasi</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold">Selamat Datang Kembali</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body pt-2">
+                    <p class="text-muted small mb-4">Masuk untuk mulai menyewa kamera dan perlengkapan fotografi profesional.</p>
+                    <div class="mb-3">
+                        <label class="form-label small fw-medium">Email / ID Pengguna</label>
+                        <input type="text" id="loginEmail" class="form-control form-control-lg bg-light" placeholder="Masukkan ID atau Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label small fw-medium">Kata Sandi</label>
+                        <input type="password" id="loginPassword" class="form-control form-control-lg bg-light" placeholder="Masukkan kata sandi">
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 fw-bold rounded-3" onclick="app.handleLogin()">Masuk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sewa / Checkout -->
+    <div class="modal fade" id="rentModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Atur Waktu Sewa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center mb-4">
+                        <img id="rentImage" src="" alt="Produk" class="rounded-3 me-3 object-fit-cover" width="80" height="80">
+                        <div>
+                            <h6 id="rentProductName" class="fw-bold mb-1">Nama Produk</h6>
+                            <p id="rentProductPrice" class="text-success fw-bold mb-0">Rp0</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-medium">Durasi Peminjaman (Menit)</label>
+                        <input type="number" id="rentDuration" class="form-control form-control-lg bg-light" placeholder="Contoh: 2" min="1">
+                        <div class="form-text">Dalam sistem riil ini dihitung harian, untuk simulasi gunakan menit.</div>
+                    </div>
+                    <input type="hidden" id="rentProductId">
+                    <button class="btn btn-success btn-lg w-100 fw-bold rounded-3" onclick="app.processRent()">Konfirmasi Sewa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
