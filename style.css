@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 :root {
     --primary-green: #00b14f;
@@ -7,10 +7,14 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Teks deskripsi tetap menggunakan Inter */
     background-color: #ffffff;
     color: #1a1a1a;
     -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 
 .text-success { color: var(--primary-green) !important; }
@@ -78,7 +82,7 @@ body {
 .custom-tabs .nav-link.active {
     color: #000;
     background: transparent;
-    border-bottom: 2px solid #d9a05b; /* Warna garis emas/orange seperti referensi */
+    border-bottom: 2px solid #d9a05b;
 }
 
 /* Tabel Spesifikasi */
