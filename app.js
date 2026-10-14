@@ -37,19 +37,19 @@ const generateIncluded = (type) => {
 const flareDatabase = [
     // --- KAMERA (1-3) ---
     { 
-        id: 1, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Canon', name: 'Canon Kamera Pro Series Gen 1', price: 820000, stock: 5, rating: '4.2', reviews: 110, image: '/img/canon1.jpg', // ini untuk image Canon Kamera Pro Series Gen 1
+        id: 1, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Canon', name: 'Canon Kamera Pro Series Gen 1', price: 820000, stock: 5, rating: '4.2', reviews: 110, image: 'img/canon1.jpg', // ini untuk image Canon Kamera Pro Series Gen 1
         overview: "Kamera flagship dari Canon yang dirancang khusus untuk para profesional. Menawarkan kualitas gambar luar biasa dengan sensor full-frame terbaru, kemampuan merekam video 4K tanpa crop, dan sistem autofokus yang didukung oleh AI untuk mendeteksi mata dan wajah dengan sangat presisi. Sangat cocok untuk kebutuhan wedding, komersial, maupun jurnalisme.",
         detailedSpecs: { "Type": "Digital, single-lens reflex, AF/AE camera", "Recording Media": "CFexpress / SD card", "Compatible Lenses": "Canon RF lenses", "Image Sensor": "Full-Frame CMOS sensor", "Pixels": "Approx. 45.0 megapixels", "ISO Speed": "ISO 100-51200", "Shutter Type": "Electronically-controlled, focal-plane shutter" },
         included: generateIncluded('kamera')
     },
     { 
-        id: 2, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Nikon', name: 'Nikon Kamera Pro Series Gen 2', price: 190000, stock: 5, rating: '4.6', reviews: 85, image: '/img/nikon2.jpg', // ini untuk image Nikon Kamera Pro Series Gen 2
+        id: 2, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Nikon', name: 'Nikon Kamera Pro Series Gen 2', price: 190000, stock: 5, rating: '4.6', reviews: 85, image: 'img/nikon2.jpg', // ini untuk image Nikon Kamera Pro Series Gen 2
         overview: "Kamera serbaguna dari Nikon yang menggabungkan performa fotografi dan videografi dalam satu bodi yang ringkas. Dilengkapi dengan in-body image stabilization (IBIS) yang kuat, memastikan hasil tangkapan Anda selalu tajam meskipun dalam kondisi minim cahaya.",
         detailedSpecs: { "Type": "Mirrorless AF/AE camera", "Recording Media": "SD/SDHC/SDXC (UHS-II)", "Compatible Lenses": "Nikon Z mount", "Image Sensor": "APS-C CMOS", "Pixels": "Approx. 24.2 megapixels", "ISO Speed": "ISO 100-25600", "Autofocus": "Hybrid phase-detection" },
         included: generateIncluded('kamera')
     },
     { 
-        id: 3, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Sony', name: 'Sony Kamera Pro Series Gen 3', price: 370000, stock: 5, rating: '4.9', reviews: 402, image: '/img/sony3.jpg', // ini untuk image Sony Kamera Pro Series Gen 3
+        id: 3, categoryId: 'kamera', categoryName: 'Kamera', brand: 'Sony', name: 'Sony Kamera Pro Series Gen 3', price: 370000, stock: 5, rating: '4.9', reviews: 402, image: 'img/sony3.jpg', // ini untuk image Sony Kamera Pro Series Gen 3
         overview: "Standar industri terbaru untuk para pembuat film dan fotografer. Sony memberikan dynamic range 15-stop yang memukau dan perekaman 10-bit 4:2:2 internal. Bodi magnesium alloy membuatnya tangguh digunakan dalam berbagai kondisi cuaca ekstrem.",
         detailedSpecs: { "Type": "Interchangeable lens digital camera", "Recording Media": "Dual Slot SD/CFexpress Type A", "Compatible Lenses": "Sony E-mount", "Image Sensor": "33MP Full-Frame Exmor R", "Video Format": "XAVC S, XAVC HS", "ISO Speed": "ISO 100-51200", "Viewfinder": "Quad-VGA OLED" },
         included: generateIncluded('kamera')
@@ -57,19 +57,19 @@ const flareDatabase = [
 
     // --- LENSA (4-6) ---
     { 
-        id: 4, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Sony', name: 'Sony Lensa Pro Series Gen 1', price: 230000, stock: 5, rating: '4.8', reviews: 140, image: '/img/sony4.jpg', // ini untuk image Sony Lensa Pro Series Gen 1
+        id: 4, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Sony', name: 'Sony Lensa Pro Series Gen 1', price: 230000, stock: 5, rating: '4.8', reviews: 140, image: 'img/sony4.jpg', // ini untuk image Sony Lensa Pro Series Gen 1
         overview: "Lensa G Master andalan Sony dengan bukaan konstan f/2.8. Memberikan ketajaman luar biasa dari ujung ke ujung frame dan bokeh yang sangat halus. Ideal untuk potret, acara pernikahan, maupun fotografi jurnalistik.",
         detailedSpecs: { "Focal Length": "24-70mm", "Maximum Aperture": "f/2.8", "Minimum Aperture": "f/22", "Lens Mount": "Sony E", "Format Compatibility": "Full-Frame", "Minimum Focus Distance": "0.21m", "Optical Design": "20 Elements in 15 Groups" },
         included: generateIncluded('lensa')
     },
     { 
-        id: 5, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Canon', name: 'Canon Lensa Pro Series Gen 2', price: 190000, stock: 5, rating: '4.7', reviews: 88, image: '/img/canon5.jpg', // ini untuk image Canon Lensa Pro Series Gen 2
+        id: 5, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Canon', name: 'Canon Lensa Pro Series Gen 2', price: 190000, stock: 5, rating: '4.7', reviews: 88, image: 'img/canon5.jpg', // ini untuk image Canon Lensa Pro Series Gen 2
         overview: "Lensa prime bukaan super lebar f/1.2 dari Canon L-series. Dirancang untuk mengisolasi subjek dengan sempurna dan bekerja optimal dalam kondisi kurang cahaya. Ketajaman optik yang tidak tertandingi di kelasnya.",
         detailedSpecs: { "Focal Length": "50mm", "Maximum Aperture": "f/1.2", "Lens Mount": "Canon RF", "Format Compatibility": "Full-Frame", "Filter Size": "77mm", "Diaphragm Blades": "10, Rounded", "Autofocus": "Ring-type USM" },
         included: generateIncluded('lensa')
     },
     { 
-        id: 6, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Nikon', name: 'Nikon Lensa Pro Series Gen 3', price: 160000, stock: 5, rating: '4.5', reviews: 99, image: '/img/nikon6.jpg', // ini untuk image Nikon Lensa Pro Series Gen 3
+        id: 6, categoryId: 'lensa', categoryName: 'Lensa', brand: 'Nikon', name: 'Nikon Lensa Pro Series Gen 3', price: 160000, stock: 5, rating: '4.5', reviews: 99, image: 'img/nikon6.jpg', // ini untuk image Nikon Lensa Pro Series Gen 3
         overview: "Lensa telefoto andalan untuk olahraga dan satwa liar. Dengan rentang 70-200mm, lensa ini dilengkapi Vibration Reduction (VR) mutakhir yang memungkinkan Anda memotret tajam menggunakan handheld pada kecepatan rana rendah.",
         detailedSpecs: { "Focal Length": "70-200mm", "Maximum Aperture": "f/2.8", "Lens Mount": "Nikon Z", "Format Compatibility": "Full-Frame", "Image Stabilization": "VR (Vibration Reduction)", "Weight": "1360g", "Filter Size": "77mm" },
         included: generateIncluded('lensa')
@@ -77,19 +77,19 @@ const flareDatabase = [
 
     // --- DRONE (7-9) ---
     { 
-        id: 7, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 1', price: 450000, stock: 5, rating: '4.9', reviews: 250, image: '/img/dji7.jpg', // ini untuk image DJI Drone Pro Series Gen 1
+        id: 7, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 1', price: 450000, stock: 5, rating: '4.9', reviews: 250, image: 'img/dji7.jpg', // ini untuk image DJI Drone Pro Series Gen 1
         overview: "Membawa kualitas sinematik ke langit. Drone ini dilengkapi kamera Hasselblad dengan sensor 4/3 CMOS yang menangkap warna yang kaya dan detail yang tajam. Sensor halangan omnidireksional menjamin penerbangan yang aman.",
         detailedSpecs: { "Takeoff Weight": "895g", "Max Flight Time": "46 minutes", "Max Hovering Time": "40 minutes", "Max Flight Distance": "30 km", "Wind Resistance": "12 m/s", "Camera Sensor": "4/3 CMOS, Effective Pixels: 20 MP", "Video Resolution": "5.1K: 5120×2700@50fps" },
         included: generateIncluded('drone')
     },
     { 
-        id: 8, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 2', price: 320000, stock: 5, rating: '4.8', reviews: 185, image: '/img/dji8.jpg', // ini untuk image DJI Drone Pro Series Gen 2
+        id: 8, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 2', price: 320000, stock: 5, rating: '4.8', reviews: 185, image: 'img/dji8.jpg', // ini untuk image DJI Drone Pro Series Gen 2
         overview: "Kecil namun mematikan. Drone ultra-ringan di bawah 250 gram ini lolos dari banyak regulasi ketat, namun tetap menyuguhkan kualitas video 4K HDR dan fitur pelacakan subjek otomatis (ActiveTrack).",
         detailedSpecs: { "Takeoff Weight": "< 249g", "Max Flight Time": "34 minutes", "Max Wind Resistance": "10.7 m/s (Level 5)", "Camera Sensor": "1/1.3-inch CMOS", "Video Resolution": "4K: 3840×2160@60fps", "Transmission": "OcuSync 4.0", "Obstacle Sensing": "Omnidirectional" },
         included: generateIncluded('drone')
     },
     { 
-        id: 9, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 3', price: 550000, stock: 5, rating: '4.7', reviews: 190, image: '/img/dji9.jpg', // ini untuk image DJI Drone Pro Series Gen 3
+        id: 9, categoryId: 'drone', categoryName: 'Drone', brand: 'DJI', name: 'DJI Drone Pro Series Gen 3', price: 550000, stock: 5, rating: '4.7', reviews: 190, image: 'img/dji9.jpg', // ini untuk image DJI Drone Pro Series Gen 3
         overview: "Spesialis FPV (First Person View) yang memberikan pengalaman terbang paling imersif. Cocok untuk mengambil adegan aksi berkecepatan tinggi dengan manuver akrobatik yang presisi.",
         detailedSpecs: { "Takeoff Weight": "795g", "Max Speed": "140 kph", "Max Acceleration": "0-100 kph in 2s", "Max Flight Time": "20 minutes", "Camera Sensor": "1/2.3-inch CMOS", "FOV": "150°", "Video Resolution": "4K/60fps" },
         included: generateIncluded('drone')
@@ -97,19 +97,19 @@ const flareDatabase = [
 
     // --- LIGHTING (10-12) ---
     { 
-        id: 10, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Godox', name: 'Godox Lighting Pro Series Gen 1', price: 150000, stock: 5, rating: '4.8', reviews: 180, image: '/img/godox10.jpg', // ini untuk image Godox Lighting Pro Series Gen 1
+        id: 10, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Godox', name: 'Godox Lighting Pro Series Gen 1', price: 150000, stock: 5, rating: '4.8', reviews: 180, image: 'img/godox10.jpg', // ini untuk image Godox Lighting Pro Series Gen 1
         overview: "Lampu studio serbaguna (Continuous LED) bertenaga tinggi. Menghasilkan pencahayaan yang stabil dan merata, ideal untuk wawancara, podcast, maupun fotografi potret. Mendukung Bowens mount untuk kemudahan menggunakan softbox.",
         detailedSpecs: { "Power Consumption": "60W", "Color Temperature": "5600K ± 200K", "CRI": "96+", "TLCI": "97+", "Dimming Range": "10%-100%", "Cooling System": "Built-in Fan & Heatsink", "Mount Type": "Bowens Mount" },
         included: generateIncluded('lighting')
     },
     { 
-        id: 11, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Godox', name: 'Godox Lighting Pro Series Gen 2', price: 220000, stock: 5, rating: '4.7', reviews: 110, image: '/img/godox11.jpg', // ini untuk image Godox Lighting Pro Series Gen 2
+        id: 11, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Godox', name: 'Godox Lighting Pro Series Gen 2', price: 220000, stock: 5, rating: '4.7', reviews: 110, image: 'img/godox11.jpg', // ini untuk image Godox Lighting Pro Series Gen 2
         overview: "Lampu kilat (Strobe) nirkabel portabel dengan output power yang besar. Baterai internal yang tahan lama memungkinkan pemotretan outdoor yang fleksibel tanpa perlu terhubung ke colokan listrik.",
         detailedSpecs: { "Max Power": "400Ws", "Guide Number": "72m at ISO 100", "Recycle Time": "0.01-0.9 sec", "Flashes per Charge": "390 Full Power", "Color Temperature": "5600K ± 200K", "Wireless System": "Built-in 2.4G X System", "Sync Mode": "HSS up to 1/8000s" },
         included: generateIncluded('lighting')
     },
     { 
-        id: 12, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Aputure', name: 'Aputure Lighting Pro Series Gen 3', price: 350000, stock: 5, rating: '4.9', reviews: 90, image: '/img/aputure12.jpg', // ini untuk image Aputure Lighting Pro Series Gen 3
+        id: 12, categoryId: 'lighting', categoryName: 'Lighting', brand: 'Aputure', name: 'Aputure Lighting Pro Series Gen 3', price: 350000, stock: 5, rating: '4.9', reviews: 90, image: 'img/aputure12.jpg', // ini untuk image Aputure Lighting Pro Series Gen 3
         overview: "Lampu tabung RGBWW (Tube Light) yang sangat kreatif. Bisa menghasilkan jutaan warna dan efek pencahayaan khusus (seperti lampu polisi, kembang api) yang dapat dikontrol secara nirkabel melalui aplikasi smartphone.",
         detailedSpecs: { "Power": "36W", "Color Temperature": "2700K - 12000K", "RGB Tuning": "Full HSI Color Control", "CRI": "95", "TLCI": "98", "Battery Life": "2 Hours at 100%", "Control": "On-board, Sidus Link App" },
         included: generateIncluded('lighting')
@@ -117,24 +117,32 @@ const flareDatabase = [
 
     // --- AUDIO (13-15) ---
     { 
-        id: 13, categoryId: 'audio', categoryName: 'Audio', brand: 'Rode', name: 'Rode Audio Pro Series Gen 1', price: 180000, stock: 5, rating: '4.9', reviews: 280, image: '/img/rode13.jpg', // ini untuk image Rode Audio Pro Series Gen 1
+        id: 13, categoryId: 'audio', categoryName: 'Audio', brand: 'Rode', name: 'Rode Audio Pro Series Gen 1', price: 180000, stock: 5, rating: '4.9', reviews: 280, image: 'img/rode13.jpg', // ini untuk image Rode Audio Pro Series Gen 1
         overview: "Sistem mikrofon nirkabel dual-channel yang paling ringkas dan serbaguna di dunia. Ideal untuk vlog, interview, dan pembuatan film. Dilengkapi dengan memori internal untuk merekam backup audio sehingga Anda tidak akan pernah kehilangan hasil wawancara.",
         detailedSpecs: { "Acoustic Principle": "Pre-polarised pressure transducer", "Polar Pattern": "Omnidirectional", "Frequency Range": "50Hz – 20kHz", "Max SPL": "100 dB SPL", "Analog Inputs": "3.5mm TRS (lavalier)", "Transmission Range": "200m (line of sight)", "Battery Life": "Up to 7 hours" },
         included: generateIncluded('audio')
     },
     { 
-        id: 14, categoryId: 'audio', categoryName: 'Audio', brand: 'DJI', name: 'DJI Audio Pro Series Gen 2', price: 210000, stock: 5, rating: '4.8', reviews: 160, image: '/img/dji14.jpg', // ini untuk image DJI Audio Pro Series Gen 2
+        id: 14, categoryId: 'audio', categoryName: 'Audio', brand: 'DJI', name: 'DJI Audio Pro Series Gen 2', price: 210000, stock: 5, rating: '4.8', reviews: 160, image: 'img/dji14.jpg', // ini untuk image DJI Audio Pro Series Gen 2
         overview: "Sistem audio nirkabel pintar dari DJI. Kualitas suara sebening kristal dengan fitur noise cancelling aktif, ditambah desain case pengisian daya yang memudahkan portabilitas sekaligus pairing instan.",
         detailedSpecs: { "Wireless Tech": "2.4 GHz digital transmission", "Operating Range": "250m", "Audio Recording": "32-bit Float Internal Recording", "Microphone Type": "Omnidirectional", "Battery Life (TX)": "5.5 Hours", "Battery Life (w/ Case)": "Up to 15 Hours", "Display": "OLED Touchscreen" },
         included: generateIncluded('audio')
     },
     { 
-        id: 15, categoryId: 'audio', categoryName: 'Audio', brand: 'Shure', name: 'Shure Audio Pro Series Gen 3', price: 250000, stock: 5, rating: '5.0', reviews: 195, image: '/img/shure15.jpg', // ini untuk image Shure Audio Pro Series Gen 3
+        id: 15, categoryId: 'audio', categoryName: 'Audio', brand: 'Shure', name: 'Shure Audio Pro Series Gen 3', price: 250000, stock: 5, rating: '5.0', reviews: 195, image: 'img/shure15.jpg', // ini untuk image Shure Audio Pro Series Gen 3
         overview: "Standar industri mutlak untuk podcasting dan broadcasting. Mikrofon dinamis ini mereject noise latar belakang dengan sangat baik dan memberikan karakter suara vokal yang dalam, hangat, dan sangat profesional.",
         detailedSpecs: { "Type": "Dynamic (moving coil)", "Frequency Response": "50 to 20,000 Hz", "Polar Pattern": "Cardioid", "Output Impedance": "150 ohms", "Sensitivity": "-59.0 dBV/Pa (1.12 mV)", "Connector": "Three-pin professional audio (XLR)", "Weight": "765g" },
         included: generateIncluded('audio')
     }
 ];
+
+const categoryImages = {
+    kamera: 'img/canon1.jpg',
+    lensa: 'img/sony4.jpg',
+    drone: 'img/dji7.jpg',
+    lighting: 'img/godox10.jpg',
+    audio: 'img/rode13.jpg'
+};
 
 function initializeDatabase() {
     if (!localStorage.getItem('flare_products')) {
@@ -143,16 +151,108 @@ function initializeDatabase() {
     return JSON.parse(localStorage.getItem('flare_products'));
 }
 
+function mapInventoryProduct(item) {
+    const categoryId = String(item.kategori || '').toLocaleLowerCase('id-ID');
+    const brand = String(item.brand || 'FlareCam');
+    const name = String(item.nama_barang || 'Peralatan');
+    const normalizedName = name.toLocaleLowerCase('id-ID');
+    const presentation = flareDatabase.find(product =>
+        product.categoryId === categoryId &&
+        product.brand.toLocaleLowerCase('id-ID') === brand.toLocaleLowerCase('id-ID') &&
+        normalizedName.startsWith(product.name.toLocaleLowerCase('id-ID'))
+    ) || flareDatabase.find(product =>
+        product.categoryId === categoryId &&
+        product.brand.toLocaleLowerCase('id-ID') === brand.toLocaleLowerCase('id-ID')
+    );
+
+    return {
+        ...(presentation || {}),
+        id: Number(item.id),
+        sku: item.kode_barang,
+        categoryId,
+        categoryName: item.kategori,
+        brand,
+        name,
+        price: Number(item.harga),
+        stock: Number(item.jumlah),
+        image: presentation?.image || categoryImages[categoryId] || categoryImages.kamera,
+        rating: presentation?.rating || '5.0',
+        reviews: presentation?.reviews || 0,
+        overview: item.deskripsi || presentation?.overview || 'Informasi produk belum tersedia.',
+        detailedSpecs: presentation?.detailedSpecs || { 'Kondisi & Kelengkapan': item.deskripsi || '-' },
+        included: presentation?.included || generateIncluded(categoryId)
+    };
+}
+
+function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, character => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    })[character]);
+}
+
 // --- CORE APPLICATION LOGIC ---
 const app = {
     products: initializeDatabase(),
     user: JSON.parse(localStorage.getItem('flare_user')) || null,
     rentals: JSON.parse(localStorage.getItem('flare_rentals')) || [],
     currentFilter: 'all',
+    serverInventory: false,
+    localDemo: false,
+    returnProcessing: false,
 
-    init() {
+    async init() {
+        this.localDemo = window.location.protocol === 'file:';
+        if (!this.localDemo) {
+            try {
+                const response = await fetch('api/produk.php', {
+                    headers: { Accept: 'application/json' }
+                });
+                const result = await response.json();
+                if (!response.ok) {
+                    throw new Error(result.error || 'Data inventaris gagal dimuat.');
+                }
+                if (!Array.isArray(result)) {
+                    throw new Error('Format data inventaris tidak valid.');
+                }
+                this.products = result.map(mapInventoryProduct);
+                this.serverInventory = true;
+                this.rentals = JSON.parse(localStorage.getItem('flare_rentals_php')) || [];
+            } catch (error) {
+                console.error('Gagal memuat inventaris PHP:', error);
+                this.products = [];
+                this.inventoryLoadError = true;
+            }
+        }
         this.startCronJob();
         this.navigate('home');
+        if (this.inventoryLoadError) {
+            this.showToast('Katalog gagal terhubung ke database. Periksa koneksi PHP dan MySQL.', 'danger');
+        }
+    },
+
+    persistRentals() {
+        const key = this.serverInventory ? 'flare_rentals_php' : 'flare_rentals';
+        localStorage.setItem(key, JSON.stringify(this.rentals));
+    },
+
+    async updateServerStock(action, id) {
+        const response = await fetch('api/stok.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+            },
+            body: JSON.stringify({ action, id })
+        });
+        const result = await response.json();
+        if (!response.ok) {
+            throw new Error(result.error || 'Stok gagal diperbarui.');
+        }
+        return Number(result.stock);
     },
 
     showToast(message, type = 'success') {
@@ -163,36 +263,56 @@ const app = {
         toast.show();
     },
 
+    inventoryNotice() {
+        return this.inventoryLoadError
+            ? `<div class="alert alert-warning border-0 shadow-sm rounded-4 mb-4" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    Katalog belum terhubung ke database. Pastikan MySQL aktif dan database rental sudah disiapkan.
+               </div>`
+            : '';
+    },
+
     startCronJob() {
-        setInterval(() => {
+        setInterval(async () => {
+            if (this.returnProcessing) return;
             let now = Date.now();
-            let hasChanges = false;
-            let updatedRentals = [];
-            let restockCount = {};
+            const expiredRentals = this.rentals.filter(r => now > r.returnTime);
+            if (expiredRentals.length === 0) return;
+            this.returnProcessing = true;
 
-            this.rentals.forEach(r => {
-                if (now > r.returnTime) {
-                    restockCount[r.productId] = (restockCount[r.productId] || 0) + r.qty;
-                    hasChanges = true;
-                } else {
-                    updatedRentals.push(r);
-                }
-            });
-
-            if (hasChanges) {
-                this.products = this.products.map(p => {
-                    if (restockCount[p.id]) {
-                        p.stock += restockCount[p.id];
+            try {
+                let hasReturnedItems = false;
+                const updatedRentals = this.rentals.filter(r => now <= r.returnTime);
+                for (const rental of expiredRentals) {
+                    const product = this.products.find(p => p.id === rental.productId);
+                    if (!product) {
+                        updatedRentals.push(rental);
+                        continue;
                     }
-                    return p;
-                });
+                    try {
+                        product.stock = this.serverInventory
+                            ? await this.updateServerStock('return', product.id)
+                            : product.stock + rental.qty;
+                        hasReturnedItems = true;
+                    } catch (error) {
+                        console.error('Gagal mengembalikan stok:', error);
+                        updatedRentals.push(rental);
+                        this.showToast(error.message, 'danger');
+                    }
+                }
                 this.rentals = updatedRentals;
-                localStorage.setItem('flare_products', JSON.stringify(this.products));
-                localStorage.setItem('flare_rentals', JSON.stringify(this.rentals));
+                if (!this.serverInventory) {
+                    localStorage.setItem('flare_products', JSON.stringify(this.products));
+                }
+                this.persistRentals();
                 
                 if (document.getElementById('profile-page')) this.renderProfile();
                 if (document.getElementById('products-page')) this.renderProductsList();
-                this.showToast('Beberapa barang telah dikembalikan otomatis oleh sistem.', 'info');
+                if (hasReturnedItems) {
+                    this.showToast('Beberapa barang telah dikembalikan otomatis oleh sistem.', 'info');
+                }
+            } finally {
+                this.returnProcessing = false;
             }
         }, 5000);
     },
@@ -223,17 +343,24 @@ const app = {
 
     renderNav() {
         const actions = document.getElementById('nav-actions');
+        const inventoryLink = `
+            <a href="index.php" class="btn btn-outline-success fw-bold rounded-pill px-3 ms-2">
+                <i class="bi bi-box-seam me-1"></i>Kelola Inventaris
+            </a>
+        `;
         if (this.user) {
             actions.innerHTML = `
                 <button class="btn btn-light fw-medium rounded-pill px-3 shadow-sm border" onclick="app.navigate('profile')">
-                    <i class="bi bi-person-circle me-2 text-success"></i>Halo, ${this.user.email}
+                    <i class="bi bi-person-circle me-2 text-success"></i>Halo, ${escapeHtml(this.user.email)}
                 </button>
                 <button class="btn btn-outline-danger rounded-pill px-3 ms-2" onclick="app.logout()">Keluar</button>
+                ${inventoryLink}
             `;
         } else {
             actions.innerHTML = `
                 <button class="btn btn-outline-dark fw-bold rounded-pill px-4 me-2">Daftar</button>
                 <button class="btn btn-success fw-bold rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</button>
+                ${inventoryLink}
             `;
         }
     },
@@ -242,6 +369,7 @@ const app = {
         const topProducts = this.products.slice(0, 4);
         container.innerHTML = `
             <div class="container mt-4" id="home-page">
+                ${this.inventoryNotice()}
                 <div class="hero-section row align-items-center mb-5">
                     <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
                         <h1 class="display-4 fw-bolder mb-3" style="letter-spacing:-1px;">Satu Tempat untuk Semua Kebutuhan Fotografi.</h1>
@@ -286,7 +414,9 @@ const app = {
                 <div class="mb-5">
                     <h4 class="fw-bold mb-4">Produk Terlaris</h4>
                     <div class="row g-4">
-                        ${topProducts.map(p => this.generateProductCard(p)).join('')}
+                        ${topProducts.length
+                            ? topProducts.map(p => this.generateProductCard(p)).join('')
+                            : '<div class="col-12"><p class="text-muted mb-0">Belum ada produk yang tersedia.</p></div>'}
                     </div>
                 </div>
 
@@ -327,10 +457,10 @@ const app = {
                     <h4 class="fw-bold mb-2">Inspirasi Karya</h4>
                     <p class="text-muted mb-4">Lihat apa yang dihasilkan komunitas kami dengan gear dari FlareCam.</p>
                     <div class="row g-3">
-                        <div class="col-6 col-md-3"><img src="/img/inspirasi1.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm"></div>
-                        <div class="col-6 col-md-3"><img src="/img/inspirasi2.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm"></div>
-                        <div class="col-6 col-md-3"><img src="/img/inspirasi3.1.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm"></div>
-                        <div class="col-6 col-md-3"><img src="/img/inspirasi4.2.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm"></div>
+                        <div class="col-6 col-md-3"><img src="img/inspirasi1.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm" alt="Inspirasi fotografi 1"></div>
+                        <div class="col-6 col-md-3"><img src="img/inspirasi2.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm" alt="Inspirasi fotografi 2"></div>
+                        <div class="col-6 col-md-3"><img src="img/inspirasi3.1.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm" alt="Inspirasi fotografi 3"></div>
+                        <div class="col-6 col-md-3"><img src="img/inspirasi4.2.jpg" class="img-fluid rounded-4 h-100 object-fit-cover shadow-sm" alt="Inspirasi fotografi 4"></div>
                     </div>
                 </div>
 
@@ -349,6 +479,7 @@ const app = {
     renderProductsPage(container) {
         container.innerHTML = `
             <div class="container mt-4" id="products-page">
+                ${this.inventoryNotice()}
                 <div class="row">
                     <div class="col-md-3 mb-4">
                         <div class="filter-sidebar bg-white p-4 rounded-4 border shadow-sm">
@@ -371,7 +502,7 @@ const app = {
                     <div class="col-md-9">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h5 class="fw-bold m-0" id="product-count">Menampilkan Produk</h5>
-                            <button class="btn btn-sm btn-outline-danger rounded-pill px-3" onclick="app.resetDB()"><i class="bi bi-arrow-clockwise me-1"></i>Reset DB</button>
+                            ${this.localDemo ? '<button class="btn btn-sm btn-outline-danger rounded-pill px-3" onclick="app.resetDB()"><i class="bi bi-arrow-clockwise me-1"></i>Reset DB</button>' : ''}
                         </div>
                         <div class="row g-4" id="product-grid"></div>
                     </div>
@@ -400,7 +531,17 @@ const app = {
         }
 
         document.getElementById('product-count').innerText = `Menampilkan ${filtered.length} produk`;
-        grid.innerHTML = filtered.map(p => this.generateProductCard(p)).join('');
+        grid.innerHTML = filtered.length
+            ? filtered.map(p => this.generateProductCard(p)).join('')
+            : `<div class="col-12">
+                    <div class="text-center py-5 border rounded-4 bg-light">
+                        <i class="bi bi-camera fs-1 text-success opacity-50 mb-3 d-block"></i>
+                        <h6 class="fw-bold">${this.inventoryLoadError ? 'Katalog belum bisa dimuat' : 'Belum ada barang di kategori ini'}</h6>
+                        <p class="text-muted small mb-0">${this.inventoryLoadError
+                            ? 'Coba lagi setelah layanan MySQL dan koneksi PHP tersedia.'
+                            : 'Silakan pilih kategori lain atau cek kembali nanti.'}</p>
+                    </div>
+               </div>`;
     },
 
     generateProductCard(p) {
@@ -414,14 +555,14 @@ const app = {
                 <div class="product-card" onclick="app.navigate('detail', ${p.id})">
                     <div class="product-img-wrapper">
                         <span class="status-badge ${statusClass}">${statusText}</span>
-                        <img src="${p.image}" class="product-img" alt="${p.name}">
+                        <img src="${escapeHtml(p.image)}" class="product-img" alt="${escapeHtml(p.name)}">
                     </div>
                     <div class="card-body p-4 d-flex flex-column flex-grow-1">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <span class="text-muted small">${p.categoryName} • ${p.brand}</span>
+                            <span class="text-muted small">${escapeHtml(p.categoryName)} • ${escapeHtml(p.brand)}</span>
                             <span class="small fw-bold"><i class="bi bi-star-fill text-warning me-1"></i>${p.rating} (${p.reviews})</span>
                         </div>
-                        <h6 class="fw-bold mb-3 lh-base">${p.name}</h6>
+                        <h6 class="fw-bold mb-3 lh-base">${escapeHtml(p.name)}</h6>
                         <div class="mt-auto">
                             <h6 class="text-success fw-bold m-0">Rp${p.price.toLocaleString('id-ID')} <span class="text-muted small fw-normal">/hari</span></h6>
                         </div>
@@ -441,7 +582,7 @@ const app = {
         // Membangun Table Spesifikasi HTML
         let tableHtml = '<table class="table table-bordered table-specs"><tbody>';
         for (const [key, value] of Object.entries(p.detailedSpecs)) {
-            tableHtml += `<tr><th>${key}</th><td>${value}</td></tr>`;
+            tableHtml += `<tr><th>${escapeHtml(key)}</th><td>${escapeHtml(value)}</td></tr>`;
         }
         tableHtml += '</tbody></table>';
 
@@ -465,18 +606,18 @@ const app = {
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)" class="text-success text-decoration-none" onclick="app.navigate('home')">Home</a></li>
                         <li class="breadcrumb-item"><a href="javascript:void(0)" class="text-success text-decoration-none" onclick="app.navigate('products')">Produk</a></li>
-                        <li class="breadcrumb-item active">${p.name}</li>
+                        <li class="breadcrumb-item active">${escapeHtml(p.name)}</li>
                     </ol>
                 </nav>
 
                 <div class="row mb-5">
                     <div class="col-md-6 mb-4 mb-md-0">
                         <div class="position-relative border p-3 rounded text-center h-100 d-flex align-items-center justify-content-center">
-                            <img src="${p.image}" class="img-fluid" style="max-height: 400px; object-fit: contain;" alt="${p.name}">
+                            <img src="${escapeHtml(p.image)}" class="img-fluid" style="max-height: 400px; object-fit: contain;" alt="${escapeHtml(p.name)}">
                         </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column justify-content-start px-md-4 pt-3">
-                        <h2 class="fw-bolder mb-3">${p.name}</h2>
+                        <h2 class="fw-bolder mb-3">${escapeHtml(p.name)}</h2>
                         
                         <div class="d-flex align-items-center mb-4">
                             <div class="me-4">
@@ -518,7 +659,7 @@ const app = {
                         
                         <div class="tab-content" id="detailTabsContent">
                             <div class="tab-pane fade show active py-4" id="overview" role="tabpanel">
-                                <p class="text-muted" style="line-height: 1.8; font-size: 1rem;">${p.overview}</p>
+                                <p class="text-muted" style="line-height: 1.8; font-size: 1rem;">${escapeHtml(p.overview)}</p>
                             </div>
                             <div class="tab-pane fade py-4" id="spec" role="tabpanel">
                                 ${tableHtml}
@@ -552,7 +693,7 @@ const app = {
         new bootstrap.Modal(document.getElementById('rentModal')).show();
     },
 
-    processRent() {
+    async processRent() {
         const id = parseInt(document.getElementById('rentProductId').value);
         const duration = parseInt(document.getElementById('rentDuration').value);
         
@@ -564,9 +705,15 @@ const app = {
         let pIndex = this.products.findIndex(x => x.id === id);
         let p = this.products[pIndex];
 
-        if (p.stock > 0) {
-            this.products[pIndex].stock -= 1;
-            
+        if (!p || p.stock <= 0) {
+            this.showToast('Stok barang sudah habis.', 'warning');
+            return;
+        }
+
+        try {
+            this.products[pIndex].stock = this.serverInventory
+                ? await this.updateServerStock('rent', p.id)
+                : p.stock - 1;
             this.rentals.push({
                 id: 'TRX-' + Date.now(),
                 productId: p.id,
@@ -577,13 +724,18 @@ const app = {
                 returnTime: Date.now() + (duration * 60000) 
             });
 
-            localStorage.setItem('flare_products', JSON.stringify(this.products));
-            localStorage.setItem('flare_rentals', JSON.stringify(this.rentals));
+            if (!this.serverInventory) {
+                localStorage.setItem('flare_products', JSON.stringify(this.products));
+            }
+            this.persistRentals();
 
             bootstrap.Modal.getInstance(document.getElementById('rentModal')).hide();
             this.showToast(`Berhasil menyewa ${p.name}! Otomatis kembali dalam ${duration} menit.`);
             
             this.navigate('profile');
+        } catch (error) {
+            console.error('Gagal memproses penyewaan:', error);
+            this.showToast(error.message || 'Penyewaan gagal diproses.', 'danger');
         }
     },
 
@@ -599,7 +751,7 @@ const app = {
                                 <i class="bi bi-person"></i>
                             </div>
                             <div>
-                                <h4 class="fw-bold m-0">${this.user.email}</h4>
+                                <h4 class="fw-bold m-0">${escapeHtml(this.user.email)}</h4>
                                 <p class="text-muted m-0">Member FlareCam</p>
                             </div>
                         </div>
@@ -632,8 +784,8 @@ const app = {
                                                 <tr>
                                                     <td class="py-3 px-4">
                                                         <div class="d-flex align-items-center gap-3">
-                                                            <img src="${r.image}" class="rounded shadow-sm" width="40" height="40" style="object-fit:cover;">
-                                                            <span class="fw-bold">${r.productName}</span>
+                                                            <img src="${escapeHtml(r.image)}" alt="${escapeHtml(r.productName)}" class="rounded shadow-sm" width="40" height="40" style="object-fit:cover;">
+                                                            <span class="fw-bold">${escapeHtml(r.productName)}</span>
                                                         </div>
                                                     </td>
                                                     <td class="text-muted small">${new Date(r.rentTime).toLocaleTimeString('id-ID')}</td>
